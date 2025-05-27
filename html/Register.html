@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/Register.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="Username">Name :</label>
+                <input type="text" id="username" placeholder="enter your name">
+                <div id="usernameError" class="error"> 
+                </div>
+            </div>
+
+            <div class="form-group">
+                 <label for="email">Email :</label>
+                <input type="email" id="email" placeholder="enter your email">
+                <div id="emailError" class="error"> 
+                </div>
+            </div>
+
+            
+
+            <div class="form-group">
+              <label for="password">Password :</label>
+                <input type="password" id="password" placeholder="enter your password">
+                <div id="passwordError" class="error"> 
+                </div>
+            </div>
+
+              <div class="form-group">
+              <label for="age">Age :</label>
+                 <input type="number" placeholder="enter your Age">
+                <div id="AgeError" class="error"> 
+                </div>
+            </div>
+
+        
+
+            <div class="form-group">
+                <label >Gender :</label>
+                <div class="gender-options">
+                    <div class="gender-option">
+                        <input type="radio" name="gender" id="gender">
+                        <label >Male</label>
+                    </div>
+                     <div class="gender-option">
+                        <input type="radio" name="gender" id="gender">
+                        <label >Female</label>
+                        <div id="genderError" class="error"></div>
+
+                    </div>
+                    
+                </div>
+                <div id="emailError" class="error"> 
+                </div>
+            </div>
+
+
+             <button type="submit">Registration </button>
+        </form>
+
+         <div id="successMessage" class="success-message">
+            Success!
+         </div>
+    </div>  
+
+    <script src="../js/Register.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: #060644;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .cover {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .info h1 {
+      margin: 10px 0 0;
+    }
+
+    .artist {
+      color: #ddd;
+      font-size: 0.9rem;
+      margin-top: 5px;
+    }
+
+    hr {
+      margin: 20px auto;
+      border: 0.5px solid #ccc;
+    }
+
+    .audio-controls {
+      margin: 10px 0 10px;
+    }
+
+    #audio {
+      display: none;
+    }
+
+    #playBtn {
+      font-size: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+    }
+
+    .progress-container {
+      width: 100%;
+      background-color: #333;
+      height: 6px;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-top: 10px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: #ff4757;
+      transition: width 0.25s linear;
+    }
+
+    .time-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      margin-top: 5px;
+    }
+
+    .lyrics-card {
+      background-color: #ff4757;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .lyrics-card h2 {
+      margin-top: 0;
+    }
+
+    .lyrics-card .faded {
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    
+@media screen and (max-width: 1024px) {
+  .detail-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .song-cover {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .song-info h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .song-info p {
+    font-size: 14px;
+  }
+}
